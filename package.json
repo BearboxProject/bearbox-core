@@ -5,8 +5,8 @@
   "main": "dist/app.js",
   "scripts": {
     "start": "node dist/app.js",
-    "dev": "ts-node src/app.ts",
-    "build": "tsc"
+    "dev": "ts-node -r tsconfig-paths/register src/app.ts",
+    "build": "tsc && tsc-alias"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   "homepage": "https://github.com/BearboxProject/bearbox-core#readme",
   "devDependencies": {
     "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.4.2"
   }
 }
